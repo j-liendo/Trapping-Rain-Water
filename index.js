@@ -101,9 +101,27 @@ const handleInput = (e) => {
     }
     input = inputTag.value;
     let arr = input.split(',');
+
+    // All arr elementes are numbers
     for (const i in arr) {
         if (isNaN(arr[i]) && arr[i] < 0) {
             showAlert('Input not valid')
+            return;
+        }
+    }
+
+    // All arr elementes are numbers positives
+    for (const i in arr) {
+        if (arr[i] < 0) {
+            showAlert('Number(s) most be positives')
+            return;
+        }
+    }
+
+    // All arr elementes are numbers int
+    for (const i in arr) {
+        if (arr[i] != parseInt(arr[i])) {
+            showAlert('Number(s) most be integers')
             return;
         }
     }
