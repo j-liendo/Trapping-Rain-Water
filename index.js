@@ -102,7 +102,7 @@ const handleInput = (e) => {
     input = inputTag.value;
     let arr = input.split(',');
     for (const i in arr) {
-        if (isNaN(arr[i])) {
+        if (isNaN(arr[i]) && arr[i] < 0) {
             showAlert('Input not valid')
             return;
         }
