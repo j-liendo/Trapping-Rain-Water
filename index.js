@@ -1,4 +1,4 @@
-import Controller from './modules/controller';
+import Controller from './modules/controller.js';
 
 console.log('Connect');
 
