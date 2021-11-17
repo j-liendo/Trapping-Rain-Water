@@ -7,6 +7,10 @@ body {
     justify-content: center;
 }
 
+h1 {
+    text-align: center;
+}
+
 .container {
     padding: 30px;
     display: flex;
